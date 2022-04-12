@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="admin.js"></script>
+    <title>Cactus</title>
+</head>
+
+<body>
+    <div>
+        <button onclick="getDataFromStrapi();">Fetch Cactus</button>
+    </div>
+
+    <div id="cactusFetched"></div>
+
+    <div>
+        <input type="text" name="user" id="user" placeholder="Username" onchange="userValidate(this);">
+        <div id="userError" class="errorInfo"></div>
+    </div>
+    <div>
+        <input type="password" name="pass" id="pass" placeholder="Pasword" onchange="passValidate(this);">
+        <div id="passwordError" class="errorInfo"></div>
+    </div>
+
+    <div>
+        <input type="text" name="title" id="title" placeholder="Title">
+    </div>
+    <div>
+        <textarea name="description" id="description" placeholder="Description"></textarea>
+    </div>
+    <div>
+        <input type="number" name="price" id="price" placeholder="Price">
+    </div>
+    <div>
+        <input type="text" name="image" id="image" placeholder="Image Adress">
+    </div>
+    
+    <div>
+        <button onclick="postData();">Send new data</button>
+    </div>
+
+</body>
+
+</html>
